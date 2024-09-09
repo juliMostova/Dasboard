@@ -1,0 +1,39 @@
+.cards{
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.card{
+width: 220px;
+height: 7rem !important;
+border-radius: 15px;
+color: rgb(101, 98, 98);
+position: relative;
+padding: 20px;
+box-sizing: border-box;
+background-color: white;
+}
+.ditail{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:35px;
+    right: 10px;
+}
+
+.png{
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+
+.CircularProgressbar {
+    width: 5rem !important;
+    overflow: visible;
+  }
+  .CircularProgressbar-path {
+    stroke: #00FF00 !important;
+    stroke-width: 12px !important;
+    filter: drop-shadow(2px 4px 6px white);
+  }

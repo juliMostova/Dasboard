@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coming Soon", cursive; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color:white;
 }
+.app_glass{
+   display: grid;
+   height: 100%;
+   width: 100%;
+   background: #161b22;
+   gap: 10px;
+   grid-template-columns: 11rem auto 20rem;
+   overflow: hidden;
+   position: relative;
+}
+  
+@media screen and (max-width: 1200px) {
+   .app_glass{
+     grid-template-columns: 10% 50% auto;
+     overflow-y: scroll;
+   } 
+ }
+ 
+ @media screen and (max-width: 768px) {
+   .app_glass{
+     grid-template-columns: 1fr;
+   } 
+ } 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ 
+ 

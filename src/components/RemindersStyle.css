@@ -1,0 +1,58 @@
+.add_notes{
+    width: 90%;
+    padding: 15px;
+    /* border: 1px dashed #00FF00; */
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    /* color: white; */
+    background-color: white;
+    text-align: center;
+margin-top: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 5px; 
+    left: 15px;
+
+}
+.notes_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+ .new_notes{
+  width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    text-align: start;
+    box-sizing: border-box; 
+   margin-bottom: 10px;
+   position: relative;
+} 
+
+.inputText{
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+box-sizing: border-box;
+margin-bottom: 10px;
+
+}
+.trash{
+position: absolute;
+right: 10px;
+cursor: pointer;
+color: red;
+}

@@ -1,25 +1,77 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route,Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import Analytics from './components/pages/Analytics';
+import Dashboard from './components/pages/Dashboard';
+import History from './components/pages/History';
+import Celendar from './components/pages/Celendar';
+import Reports from './components/pages/Reports';
+import Settings from './components/pages/Settings';
+import Tickets from './components/pages/Tickets';
+import Users from './components/pages/Users';
+import SideBar from './components/SideBar';
+import RightSite from './components/RightSite';
+
+function App (){
+    return(
+        <div className='app'>
+
+            <div className='app_glass'>
+<SideBar/>
+<Dashboard/>
+<RightSite/>
+    <Routes>
+        <Route path='/' element={<Dashboard/>}/>
+        <Route path='/users' element={<Users/>}/>
+        <Route path='/history' element={<History/>}/>
+        <Route path='/analytics' element={<Analytics/>}/>
+        <Route path='/tickets' element={<Tickets/>}/>
+        <Route path='/reports' element={<Reports/>}/>
+        <Route path='/settings' element={<Settings/>}/>
+        <Route path='/celendar' element={<Celendar/>}/>
+    </Routes> 
     </div>
-  );
+        </div>
+    );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

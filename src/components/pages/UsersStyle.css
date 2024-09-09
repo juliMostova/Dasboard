@@ -1,0 +1,33 @@
+.users{
+    width: 100%;
+    background-color: white;
+    margin-top: 15px;
+    height: auto;
+    border-radius: 15px;
+   
+}
+.updates{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.infoBlock>img{
+    width: 5rem;
+    height: 5rem;
+    margin: 5px 0px 0px 10px;
+}
+.ditailInfoUser span, .time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ color:black;
+}
+.ditailInfoUser span:nth-child(2){
+    font-size: 12px;
+}
+.time{
+    color: grey;
+    font-size: 15px;
+}

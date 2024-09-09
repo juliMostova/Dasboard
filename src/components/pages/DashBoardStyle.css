@@ -1,0 +1,36 @@
+.dashboard{
+     display: flex;
+    flex-direction: column;
+  
+}
+
+.title{
+   margin-bottom: 5px;
+}
+/* .changeColorSite{
+     display: flex;
+     flex-direction: row;
+align-items: flex-end;
+justify-content: flex-end;
+width:70px;
+height: auto;
+border: 1p solid white;
+     cursor: pointer;
+   
+
+   
+} */
+
+@media screen and (max-width: 1200px) {
+    .dashboard{
+        justify-content:flex-start;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .dashboard{
+        align-items: center;
+    }
+}
