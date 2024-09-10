@@ -22,20 +22,24 @@ color:white;
    grid-template-columns: 11rem auto 20rem;
    overflow: hidden;
    position: relative;
+   overflow-y: auto;
 }
-  
+
+
+   
 @media screen and (max-width: 1200px) {
    .app_glass{
-     grid-template-columns: 10% 50% auto;
-     overflow-y: scroll;
+     grid-template-columns: 1fr;
+     overflow-y: auto;
    } 
  }
  
  @media screen and (max-width: 768px) {
    .app_glass{
      grid-template-columns: 1fr;
+     gap:5px;
    } 
- } 
+ }  
 
  
  

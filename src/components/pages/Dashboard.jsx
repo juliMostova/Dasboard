@@ -1,6 +1,5 @@
 import React from "react";
-import { GoSun } from "react-icons/go";
-import { IoMoonOutline } from "react-icons/io5";
+
 import Cards from "../Cards";
 import { InfoCardsMenu } from "../../data/InfoCardsMenu";
 import Users from "./Users";
@@ -10,10 +9,7 @@ import './DashBoardStyle.css';
 function Dashboard() {
   return (
     <div className="dashboard">
-      {/* <div className='changeColorSite'>
-<div><GoSun/></div>
-<div><IoMoonOutline/></div>
-      </div>  */}
+    
       <h3 className="title">Analytics</h3>
       <div className="cards">
         {InfoCardsMenu &&

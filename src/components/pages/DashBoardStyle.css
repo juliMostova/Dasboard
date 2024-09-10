@@ -7,19 +7,6 @@
 .title{
    margin-bottom: 5px;
 }
-/* .changeColorSite{
-     display: flex;
-     flex-direction: row;
-align-items: flex-end;
-justify-content: flex-end;
-width:70px;
-height: auto;
-border: 1p solid white;
-     cursor: pointer;
-   
-
-   
-} */
 
 @media screen and (max-width: 1200px) {
     .dashboard{

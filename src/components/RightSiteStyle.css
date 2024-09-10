@@ -1,0 +1,29 @@
+.notes{
+   
+        width: 98%;
+        height: 50%;
+        border-radius:10px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing:border-box;
+     
+}
+.info_block{
+    display: flex;
+     justify-content:space-around;
+}
+.byPencil{
+cursor: pointer;
+color: green;
+font-weight: bolder; 
+}
+
+
+
+@media (max-width:576px){
+    .notes{
+        width: 75%;
+    }
+}

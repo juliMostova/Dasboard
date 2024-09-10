@@ -1,6 +1,6 @@
 import React from 'react';
 import Chart from "react-apexcharts";
-
+import './DiagrammStyle.css';
 
 function Diagram() {
 
@@ -8,8 +8,9 @@ function Diagram() {
     const data = {
         series: [
           {
-            name: "Review",
-            data: [10, 50, 30, 90, 40, 120, 100],
+             name: "Review",
+            // data: [10, 50, 30, 90, 40, 120, 100],
+            data:[40,80,50,111,120,10,30]
           },
         ],
         options: {
@@ -58,7 +59,7 @@ function Diagram() {
         },
       };
   return (
-    <div className='Diagram'style={{marginBottom:'15px'}}>
+    <div className='Diagram'>
     <Chart options={data.options} series={data.series} type='area'/>
   </div>
   );

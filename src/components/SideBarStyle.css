@@ -2,24 +2,27 @@
         width: 180px;
     background-color: white;
         color:grey;
-        height: 90vh;
+         height: 100vh;
         border-radius: 8px;
-        height: 90vh;
-        /* position: fixed;
+      
+         position: fixed;
         left: 0;
-        top:0; */
+        top:0; 
         margin-top: 47px;
         position: relative;
-    
+    transition: width 0.3s ease;
   
 }
 .link{
     text-decoration:none;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    align-items: center;
     gap:15px;
     color:grey;
     padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .link:hover{
     background-color: grey;
@@ -31,5 +34,74 @@
 .menuIcon{
   font-size: 1.2rem;
 }
+/* Коли сайдбар відкритий */
+.sidebar-open {
+    grid-template-columns: 11rem auto 20rem; /* Залишаємо простір для сайдбару */
+  }
   
+  /* Коли сайдбар закритий */
+  .sidebar-closed {
+    grid-template-columns: 0 auto 20rem; /* Приховуємо сайдбар і інші секції займають простір */
+  }
+
+.changeColorSite{
+  display: flex;
+  justify-content:space-between;
+ margin: 5px;
+ padding: 3px;
+  width: 50px;
+cursor: pointer;
+
+}
+.sun{
+  background-color: transparent;
+  border-radius: 4px;
+  color: grey;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moon{
+  background-color: rgb(68, 70, 70);
+  border-radius: 4px;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.activeSun{
+  background-color: rgb(68, 70, 70);
+  border-radius: 4px;
+  color:white;
+
+}
+.activeMoon {
+  background-color: transparent;
+  color: grey;
+} 
+
+.dark-theme {
+background-color: #161b22;
+color: white;
+}
+
+.light-theme {
+background-color: white;
+color: #161b22;
+}
+
+@media screen and (max-width: 576px) {
+    .sideBar-container{
+        width: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .changeColorSite{
+      display: flex;
+      flex-direction: column;
+    }
+  }
  
