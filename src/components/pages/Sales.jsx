@@ -1,6 +1,6 @@
 import React from 'react'
 
-function History() {
+function Sales() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function History() {
   )
 }
 
-export default History;
+export default Sales;

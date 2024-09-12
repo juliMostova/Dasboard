@@ -1,3 +1,4 @@
+
  *{
   margin: 0;
   padding: 0;
@@ -10,8 +11,94 @@
 height: 100vh;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-between;
 color:white;
+background: red;
+}
+.app_glass{
+   display: grid;
+   height: 100%;
+   width: 100%;
+   background: #161b22;
+   gap: 10px;
+   grid-template-columns: 11rem 1fr 20rem;
+   grid-template-rows: auto;
+   position: relative;
+   overflow-y: auto;
+   transition: grid-template-columns 0.3s ease;
+}
+.app_glass.collapsed {
+  grid-template-columns: 3rem 1fr 20rem;
+}
+
+   
+@media screen and (max-width:1200px) {
+   .app_glass{
+     grid-template-columns: 3rem 1fr 1fr;
+   
+   } 
+  
+ }
+ .sidebar{
+  background: #20232a;
+  width: 11rem;
+  transition: width 0.3s ease;
+ }
+ .app_glass.collapsed .sidebar {
+  width: 3rem; /* Коли сайтбар стиснутий */
+}
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    width: 3rem; /* Сайтбар стає тонким на середніх екранах */
+  }
+}
+
+ @media screen and (max-width: 768px) {
+   .app_glass{
+     grid-template-columns: 1fr;
+     grid-template-rows: auto 1fr auto;
+   } 
+  .sidebar{
+    grid-row: 1;
+    width: 100%;
+  }
+  .main_content{
+    grid-row: 2;
+  }
+  .right_site{
+    grid-row: 3;
+  }
+ }  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coming Soon", cursive; 
+}
+
+
+.app {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: space-between;
+color:white;
+background: red;
 }
 .app_glass{
    display: grid;
@@ -20,18 +107,23 @@ color:white;
    background: #161b22;
    gap: 10px;
    grid-template-columns: 11rem auto 20rem;
+   grid-template-rows: auto;
    overflow: hidden;
    position: relative;
    overflow-y: auto;
+   transition: grid-template-columns 0.3s ease;
+}
+.app_glass.collapsed {
+  grid-template-columns: 3rem auto 20rem;
 }
 
-
    
-@media screen and (max-width: 1200px) {
+@media screen and (max-width:1200px) {
    .app_glass{
      grid-template-columns: 1fr;
-     overflow-y: auto;
+   
    } 
+  
  }
  
  @media screen and (max-width: 768px) {
@@ -39,7 +131,8 @@ color:white;
      grid-template-columns: 1fr;
      gap:5px;
    } 
+  
  }  
 
  
- 
+  */

@@ -1,19 +1,17 @@
 .add_notes{
     width: 90%;
     padding: 15px;
-    /* border: 1px dashed #00FF00; */
     border: none;
     border-radius: 8px;
     background-color: transparent;
-    /* color: white; */
     background-color: white;
     text-align: center;
-margin-top: 10px;
+    margin-top: 10px;
     box-sizing: border-box;
     position: absolute;
     bottom: 5px; 
     left: 15px;
-
+    cursor: pointer;
 }
 .notes_content{
     display: flex;
@@ -24,6 +22,7 @@ margin-top: 10px;
     padding: 10px;
     box-sizing: border-box;
     overflow-y: auto;
+   
 }
  .new_notes{
   width: 100%;
@@ -36,8 +35,14 @@ margin-top: 10px;
     box-sizing: border-box; 
    margin-bottom: 10px;
    position: relative;
+   transition: background-color 0.3s ease;
+   list-style-type: none;
 } 
 
+.new_notes:hover{
+    background-color: #374151; 
+    color:white;
+}
 .inputText{
     width: 100%;
     padding: 6px;
@@ -55,4 +60,9 @@ position: absolute;
 right: 10px;
 cursor: pointer;
 color: red;
+}
+
+@media (max-width:576px){
+   
+   
 }

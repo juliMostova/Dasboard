@@ -16,7 +16,7 @@
 }
 .byPencil{
 cursor: pointer;
-color: green;
+color: #6EE7B7;
 font-weight: bolder; 
 }
 
@@ -24,6 +24,8 @@ font-weight: bolder;
 
 @media (max-width:576px){
     .notes{
-        width: 75%;
+        width: 55%;
+       
     }
+   
 }

@@ -1,4 +1,99 @@
 .sideBar-container{
+position: relative;
+z-index: 10;
+transition: width 0.3s ease-in-out;
+flex-shrink: 0;
+height: 100vh;
+ background-color: rgba(31, 41, 55, 0.5); 
+backdrop-filter: blur(10px);
+padding: 1rem;
+display: flex;
+flex-direction: column;
+border-radius: 1px solid #374151;
+min-width: 80px;
+
+}
+
+.sidebar-button{
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: background-color 0.3s ease;
+  max-width: fit-content;
+  cursor: pointer;
+  border: none;
+  margin-top: 5px;
+}
+
+.sidebar-button:hover {
+  background-color: #374151; 
+}
+
+
+.sidebar-nav {
+  margin-top: 2rem;
+  flex-grow: 1;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #374151; 
+}
+
+.sidebar-icon {
+  min-width: 20px;
+}
+
+.sidebar-text {
+  margin-left: 1rem;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .sideBar-container{
         width: 180px;
     background-color: white;
         color:grey;
@@ -17,7 +112,7 @@
     text-decoration:none;
     display: flex;
     /* flex-direction: row; */
-    align-items: center;
+    /* align-items: center;
     gap:15px;
     color:grey;
     padding: 15px;
@@ -29,22 +124,22 @@
     color:white;
     border-radius: 6px;
     transition: all 0.5s;
-}
-
+} */
+/* 
 .menuIcon{
   font-size: 1.2rem;
 }
 /* Коли сайдбар відкритий */
-.sidebar-open {
+/* .sidebar-open {
     grid-template-columns: 11rem auto 20rem; /* Залишаємо простір для сайдбару */
-  }
+  /* }
   
   /* Коли сайдбар закритий */
-  .sidebar-closed {
+  /* .sidebar-closed {
     grid-template-columns: 0 auto 20rem; /* Приховуємо сайдбар і інші секції займають простір */
-  }
+  /* }  */ 
 
-.changeColorSite{
+/* .changeColorSite{
   display: flex;
   justify-content:space-between;
  margin: 5px;
@@ -61,8 +156,8 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.moon{
+} */
+/* .moon{
   background-color: rgb(68, 70, 70);
   border-radius: 4px;
   color: white;
@@ -70,8 +165,8 @@ cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.activeSun{
+} */ 
+/* .activeSun{
   background-color: rgb(68, 70, 70);
   border-radius: 4px;
   color:white;
@@ -85,9 +180,9 @@ cursor: pointer;
 .dark-theme {
 background-color: #161b22;
 color: white;
-}
+} */
 
-.light-theme {
+/* .light-theme {
 background-color: white;
 color: #161b22;
 }
@@ -104,4 +199,4 @@ color: #161b22;
       flex-direction: column;
     }
   }
- 
+  */ 

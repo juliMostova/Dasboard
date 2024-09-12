@@ -1,9 +1,19 @@
 .dashboard{
      display: flex;
     flex-direction: column;
-  
+min-width: 300px;
 }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    min-height: 200px; 
+ }
 
+ .users, .table {
+    margin-top: 1rem;
+    min-height: 150px; 
+ }
 .title{
    margin-bottom: 5px;
 }

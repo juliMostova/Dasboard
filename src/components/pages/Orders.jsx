@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Tickets() {
+function Orders() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Tickets() {
   )
 }
 
-export default Tickets
+export default Orders;

@@ -45,7 +45,7 @@ localStorage.setItem('nweInp',JSON.stringify(filterElem));
         />
       )}
       <button className="add_notes" onClick={addNewInput}>
-        <SiPluscodes style={{color:'green'}} />
+        <SiPluscodes style={{color:'#6EE7B7'}} />
         Add notes
       </button>
       <ul>
